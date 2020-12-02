@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookstore</title>
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<link rel="stylesheet" type="text/css" href="all_books.css"/>
+</head>
+<header class="navigation-bar"> 
+	<span class="logo">Bookstore</span>
+	<nav class="nav">
+	<div class="menu-wrapper" id="menuwrap"> 
+		<li><a href="index.html" class="menu-item">Главная</a></li>
+		<li><a href="all_books.html" class="menu-item">Все книги</a></li>
+		<li><a href="wishlist.html" class="menu-item">Список желаемого</a>
+		<li><a href="login.html" class="menu-item">Вход</a></li>
+		<li><a href="signup.html" class="menu-item">Регистрация</a></li>
+		<li><a href="cart.html" class="menu-item">Корзина</a></li>
+		<a href="#" class="icon">&#9776;</a>
+	</div>
+	<nav>
+</header>
+
+<section class="all-books-body"> <!-- Основной раздел страницы -->
+	
+	<h1 class="site-heading">Все книги</h1>
+
+	<span class="all-books-search">Поиск:</span>
+
+	<form method="post" action="#"> <!-- Форма поиска книг -->
+			
+		<select>
+			<option value="Не выбрано">Жанр книги</option>
+			<option value="Ужасы">Ужасы</option>
+			<option value="Научная фантастика">Научная фантастика</option>
+			<option value="Психология">Психология</option>
+			<option value="Детектив">Детектив</option>
+		</select>
+		<input type="text" name="book_author" placeholder="Автор">
+		<input type="search" name="book_name" placeholder="Название книги...">
+		<button type="submit">P</button>
+
+	</form>
+
+	<div class="books-gallery"> <!-- Галерея книг, вмещает несколько строк книжных карточек; если карточек больше, чем помещается на одной странице, доступно переключение страниц -->
+		
+		<div class="book-cards-wrapper"> <!-- Это одна строка карточек, в ней должно помещаться четыре без переноса (или сколько тебе захочется, на самом деле) -->
+			
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="book-cards-wrapper"> <!-- Это одна строка карточек, в ней должно помещаться четыре без переноса (или сколько тебе захочется, на самом деле) -->
+			
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="book-cards-wrapper"> <!-- Это одна строка карточек, в ней должно помещаться четыре без переноса (или сколько тебе захочется, на самом деле) -->
+			
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="book-cards-wrapper"> <!-- Это одна строка карточек, в ней должно помещаться четыре без переноса (или сколько тебе захочется, на самом деле) -->
+			
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+			<div class="book-card"> <!-- Сама карточка -->
+			
+				<div class="book-characteristics"> <!-- Видимая часть карточки -->
+
+					<img src="https://habrastorage.org/files/22b/18c/e70/22b18ce70e474e7c961da7540a90be97.jpg" class="book-card-image">
+					<span class="book-name">Кладбище хороших идей</span>
+					<span class="book-author">Автор: Лорем Ипсумов</span>
+					<span class="book-genre">Жанр: ужасы</span>
+					<span class="book-price">6666 тг.</span>
+					<span class="book-card-add-somewhere">+ В список желаемого</span>
+					<span class="book-card-add-somewhere">+ В корзину</span>
+					<span class="book-card-toggle-description" onclick="#">▼</span>
+
+				</div>
+
+				<div class="book-description"> <!-- Описание книги, по умолчанию невидимое (visibility: hidden). При нажатии на треугольник должен запускаться скрипт, открывающий его и прячущий обратно. Нужно оставить место так, чтобы нижние элементы не сдвигались при открытии -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+		</div><br>
+
+		<div class="page-switcher"> <!-- Переключатель страниц; ссылки внутри расположены в одну строку -->
+			
+			<a href="#" class="switcher-item">В начало</a>
+			<a href="#" class="switcher-item"><—</a>
+			<a href="#" class="switcher-item">1</a>
+			<a href="#" class="switcher-item">—></a>
+			<a href="#" class="switcher-item">В конец</a>
+
+		</div>
+
+	</div>
+
+</section>
+
+<section class="footer"> 
+	
+	<div class="footer-columns-wrapper"> 
+		
+		<div class="footer-column"> 
+			
+			<span class="footer-bookstore-name">Bookstore</span>
+			<span class="footer-bookstore-motto">Вот здесь будет слоган.</span>
+
+			<span class="footer-heading">Социальные сети:</span>
+
+			<a href="#" class="social-media-link">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" width="50" height="50">
+			</a>
+			<a href="#" class="social-media-link">
+				<img src="https://image.flaticon.com/icons/png/512/124/124021.png"width="50" height="50">
+			</a>
+			<a href="#" class="social-media-link">
+				<img src="https://cdn.worldvectorlogo.com/logos/vk-1.svg"width="50" height="50">
+			</a>
+
+		</div>
+
+		<div class="footer-column">
+			
+			<span class="footer-heading">Другая информация 1</span>
+			<a href="#" class="footer-link">Ссылка 1</a><br><br>
+			<a href="#" class="footer-link">Ссылка 2</a><br><br>
+			<a href="#" class="footer-link">Ссылка 3</a><br><br>
+			<a href="#" class="footer-link">Ссылка 4</a><br><br>
+
+		</div>
+
+		<div class="footer-column"> 
+			
+			<span class="footer-heading">Другая информация 2</span>
+			<a href="#" class="footer-link">Ссылка 1</a><br><br>
+			<a href="#" class="footer-link">Ссылка 2</a><br><br>
+			<a href="#" class="footer-link">Ссылка 3</a><br><br>
+			<a href="#" class="footer-link">Ссылка 4</a><br><br>
+
+		</div>
+
+	</div>
+
+</section>
+<script type="text/js" href="index.js"></script>
+</body>
+</html>

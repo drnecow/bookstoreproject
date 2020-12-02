@@ -1,0 +1,103 @@
+.wishlist-body{
+	border: double;
+	margin: 30px;
+	padding: 10px 0px;
+	height: 100%;
+}
+.wishlist-book-card{
+	width: 48%;
+	height: 100%;
+	padding: 3px 0px;
+	border: 1px double black;
+    text-align: center; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент */
+    margin: 10px;
+}
+.wishlist-book-card-right-part {
+	width: 60%;
+	display: inline-block;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.wishlist-book-card-left-part {
+	width: 39%;
+	display: inline-block;
+	text-align: left;
+	margin-top: 0;
+	margin-left: 0;
+}
+.wishlist-book-name{display: block;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 7%;
+}
+.wishlist-book-name:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.wishlist-book-author:hover{
+	text-decoration: underline; 
+	cursor: pointer;
+}
+.wishlist-book-genre:hover{
+	text-decoration: underline; 
+	cursor: pointer;
+}
+
+
+.wishlist-book-price{
+	font-weight: bold;
+}
+.wishlist-book-price:hover{
+	text-decoration: underline; 
+	cursor: pointer;
+}
+
+.wishlist-book-card-add-somewhere{
+	display: inline-block;
+	color: red;
+	text-align: left;
+	width: 92%;
+}
+.wishlist-book-card-add-somewhere:hover{
+	text-decoration: underline; 
+	cursor: pointer;
+}
+
+.wishlist-book-card-toggle-description{
+	display: inline-block;
+}
+.wishlist-book-description{
+	width: 100%;
+	display: none;
+	background-color: red;
+}
+span.wishlist-book-card-toggle-description:hover{
+	cursor: pointer;
+	text-decoration: underline;
+} + div.book-description{
+	display: block;
+	color:green;
+	background-color: green;
+}
+.wishlist-site-main-button{
+	border: groove;
+	border-color: #e3ab1e;
+	margin: 30PX;
+	text-align: center;
+    display: inline-block; 
+    background: #fff9db; 
+    color: #e3ab1e; 
+    padding: 1rem 1.5rem; 
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+.wishlist-page-switcher{
+	background-color: #fff9db;
+	display: block;
+	width: 100%;
+	text-align: center;
+}

@@ -1,0 +1,66 @@
+.page-switcher{
+	background-color: #fff9db;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.all-books-search{
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  font-size: 30px;
+  background-color: #fff9db;  
+}
+.books-gallery{
+	display: block;
+	vertical-align: top;
+	margin-top: 50px;: 
+}
+.popular-books{
+	display: block;
+}
+form {
+  display: block;
+  float: right;
+}
+select{
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  transition: .3s linear;
+}
+option{
+  border-radius: 42px;
+
+}
+input {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+input:focus {
+  width: 300px;
+}
+button {
+  width: 42px;
+  height: 42px;
+  background: #F9F0DA;
+  border: 2px solid #324b4e;
+  border-radius: 42px;
+  top: -2px;
+  right: 0;
+}
+button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+}

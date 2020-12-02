@@ -1,0 +1,215 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{text-decoration: none;}
+header{
+	width:100%;
+	display: flex; 
+}
+.logo{
+	background-color: #fff9db;
+	text-transform: uppercase;
+	font-weight: 600;
+  	font-size: 24px;
+  	cursor: pointer;
+  	margin-left: 10;
+  	width: 100;
+  	color: #e3ab1e;
+  	padding: 30PX;
+}
+.nav{
+	background-color: #fff5c4;
+  	margin-top: 25px;
+  	margin-left: 28%;
+}
+.menu-wrapper{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	background-color: #fff9db;
+}
+.menu-wrapper li a{
+	display: block;
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+	border-right: 1px solid #c7c8ca;
+	color: #e3ab1e;
+}
+.menu-wrapper li a:hover{
+	background: #e3ab1e;;
+	color: white;
+	box-shadow: 1px 5px 10px -5px black;
+	transition: all 0.3s ease;
+} 
+.icon{
+	display: none;
+}
+.header{
+	background: url(https://image.freepik.com/free-photo/a-stack-of-books-lying-on-the-table-on-a-light-wooden-background-back-to-school-education-background_76506-136.jpg) center no-repeat fixed; 
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+	text-align: center;
+	padding: 193px;
+	font-size: 45px;
+	color: #e3ab1e;
+}
+.site-heading{
+	text-align: center;
+	padding: 20px;
+	font-size: 45px;
+	color: #e3ab1e;
+}
+.popular-books{
+	border: double;
+	margin: 30px;
+	height: 600px
+}
+.book-cards-wrapper{
+	width: 100%;
+	text-align: center;
+    vertical-align: top; /* Выравнивание по верхнему краю */
+}
+.book-card{
+	width: 22%;
+	height: 320px;
+	border: 1px double black;
+    text-align: center; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент */
+    margin: 5px;
+}
+.book-card-image {
+	margin-top: 5px;
+	width: 95%;
+}
+.book-name{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 7%;
+}
+.book-name:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.book-author:hover{
+	text-decoration: underline; 
+	cursor: pointer;
+}
+.book-genre:hover{
+	text-decoration: underline; 
+	cursor: pointer;
+}
+.book-price{
+	font-weight: bold;
+}
+.book-price:hover{
+	text-decoration: underline; 
+	cursor: pointer;
+}
+
+.book-card-add-somewhere{
+	display: inline-block;
+	color: red;
+	text-align: left;
+	width: 92%;
+}
+.book-card-add-somewhere:hover{
+	text-decoration: underline; 
+	cursor: pointer;
+}
+
+.book-card-toggle-description{
+	display: inline-block;
+}
+.book-description{
+	width: 100%;
+	display: none;
+	background-color: red;
+}
+span.book-card-toggle-description:hover{
+	cursor: pointer;
+	text-decoration: underline;
+} + div.book-description{
+	display: block;
+	color:green;
+	background-color: green;
+}
+.site-main-button{
+	border: groove;
+	border-color: #e3ab1e;
+	margin: 30PX;
+	text-align: center;
+    display: inline-block; 
+    background: #fff9db; 
+    color: #e3ab1e; 
+    padding: 1rem 1.5rem; 
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+.store-info{
+	width: 95%;
+	height: 600px;
+	border-bottom: dotted;
+}
+.store-info-description {
+	display: inline-block;
+	width: 48%;
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+}
+.omag{
+	display: inline-block;
+	width: 48%;
+	padding: 10px;
+}
+.footer{
+	margin: 10px;
+	display: block;
+	width: 100%
+	height:250px;
+	border: double;
+}
+.footer-column{
+	display: inline-block;
+	width: 33%;
+
+}
+.footer-bookstore-name{
+	display: block;
+	padding: 10px 30px;
+	text-align: left;
+}
+.footer-bookstore-motto{
+	display: block;
+	padding: 10px 30px;
+}
+.footer-heading{
+	display: block;
+	padding: 10px 30px;
+
+}
+.social-media-link{
+	padding: 10px 30px;
+	width: 30px;
+	height: 30px;
+}
+
+@media screen and (max-width: 1000px){
+
+.menu-wrapper li a{
+	display: none;
+}
+.menu-wrapper a.icon{
+	float: right;
+	margin-top: -2px;
+	display: block;
+	color: blue;
+}
+.nav{width: 100%}
+}
